@@ -1,0 +1,25 @@
+POST http://localhost:3000/videos
+Content-Type: application/json
+
+{
+    "title" : "Video cavalo do avesso",
+    "description" : "Esse é o milésimo video",
+    "duration" : 210
+}
+
+###
+GET http://localhost:3000/videos?search=
+
+### 
+PUT http://localhost:3000/videos/cdde67f6-ec85-410f-afb6-0ebc62c45f99
+Content-Type: application/json
+
+{
+    "title" : "Video macaco prego",
+    "description" : "Esse é o primeiro video",
+    "duration" : 180
+}
+
+### 
+DELETE http://localhost:3000/videos/10ee8dc0-3afd-47b9-bf8c-ef1675e83c8c
+
